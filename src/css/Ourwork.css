@@ -1,0 +1,104 @@
+.our-work{
+    padding: 0px;
+    border:1px solid rgba(255, 0, 0, 0); /*  red color      */
+    display: flex;
+    flex-direction: row;
+}
+.our-work .Card{
+    height: 350px;
+    width: 200px;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.986);
+    margin: 30px;
+    transition: .7s;
+    
+}
+.Card p{
+    font-size: 10px;
+    color: yellow;
+}
+.Card:hover {
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+    height: 320px;
+    width: 200px;
+  }
+.our-work .Card img{
+height: 200px;
+  width: 200px;
+  border-radius: 12px;
+ 
+  padding: 12px;
+  transition: .7s;
+}
+.our-work .Card img:hover{
+    filter: brightness(120%)drop-shadow(2px 2px 6px rgb(234, 234, 234));
+}
+
+.wedo-left{
+    color: black;
+    font-family: Georgia, 'Times New Roman';
+}
+.wedo-left p{
+    font-family: 'roboto';
+    font-size: larger;
+}
+
+.wedo-right{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.wedo-right img{
+    width: 100%;
+    filter: drop-shadow(8px 8px 8px black);
+    transition: .6s;
+}
+.wedo-right img:hover{
+    filter: drop-shadow(8px 8px 8px rgb(85, 32, 12));
+}
+/*  Mobile   
+
+
+
+
+///////////////////*/
+
+@media (max-width: 768px) {
+    .work{
+        height: 220vh;
+    }
+    .our-work{
+        display: flex;
+        flex-wrap: wrap;
+        height: 100vh;
+        padding: 0px;
+        
+    }
+    .our-work .Card{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 70vh;
+       padding: 0px 12px;
+       margin: 10px;
+        
+    }
+    .our-work .Card img{
+        height: 300px;
+        padding-top: 0px;
+     
+
+        justify-content: center;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .Card p{
+        font-size: 20px;
+        color: yellow;
+    }
+    
+    
+
+}

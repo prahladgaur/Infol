@@ -1,0 +1,33 @@
+/* LOGIN  PAGE CSS */
+.login {
+  background-color: #000000;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.login-card {
+  background-color: rgba(62, 62, 62, 0.735);
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 12px;
+}
+
+/* SIGN UP CARD  */
+.signup {
+  background-color: #000000;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.signup-card {
+  background-color: rgba(62, 62, 62, 0.735);
+  padding: 12px;
+  border-radius: 12px;
+  margin-top: 4rem;
+}

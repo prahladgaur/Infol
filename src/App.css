@@ -1,0 +1,580 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+input {
+  width: 100%;
+  border:1px solid black;
+}
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  color: #ffffffcf;
+  background: linear-gradient(to bottom, #9086ed, #5448d7, #7676ff);
+}
+/* Below Hero page Section
+//////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+ */
+
+ .about-text{
+  font-size: 12px;
+  color: #000;
+  display: flex;
+  margin: 12px;
+  justify-content: center;
+ }
+ .about-text p{
+  color: #000;
+ }
+section {
+  background-color: #acacac00;
+  height: 100vh;
+  
+  
+}
+.division {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+.division1 {
+  margin-top: 5rem;
+}
+
+.container.left {
+  background-color: rgba(0, 255, 255, 0);
+  width: 50%;
+  height: 100vh;
+  border: 1px solid rgba(255, 0, 0, 0); /*  red color      */
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.container.left img{
+  width: 150%;
+  height: 80vh;
+  transition: 1s;
+}
+.container.left img:hover{
+  filter: drop-shadow(8px 8px 8px black);
+  transform:rotate(10deg) ;
+}
+
+.container.right {
+  background-color: rgba(127, 255, 212, 0);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 50%;
+  height: 100vh;
+  border: 1px solid rgba(255, 0, 0, 0); /*  red color      */
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+.container.right.about{
+  margin: 0px 0px;
+
+}
+
+.container img {
+  width: 100px;
+  height: auto;
+}
+
+/*  NavBar 
+/////////////////////////////////////
+///////////////////////////////////////
+/////////////////////////////////////*/
+header {
+  background-color: rgba(51, 51, 51, 0);
+  color: #ffffff;
+  position: fixed;
+  top: 0;
+  border-radius: 5px;
+  width: 100%;
+  padding: 2px;
+  z-index: 1000;
+  margin-top: 8px;
+}
+
+.navbar {
+  width: 100%;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+nav {
+  background-color: transparent;
+}
+
+
+nav.scrolled {
+  background-color: #01020284; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+  background-color: rgba(31, 150, 67, 0);
+  border-radius: 5px;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman';
+  font-size: 15px;
+}
+
+nav ul li a:hover {
+  color: rgb(215, 151, 22);
+}
+
+nav .menu-toggle {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.2rem;
+  height: 2rem;
+}
+
+nav .menu-toggle span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: rgba(103, 103, 103, 0.753);
+  border-radius: 0.2rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+/* Hero Page
+//////////////////////////
+//////////////////////
+/////////////////////
+
+*/
+.hero,
+.about,
+.projects,
+.work,
+.footer {
+  width: 100%;
+  height: 100vh;
+  font-family: cursive;
+}
+.hero {
+  position: relative;
+  color: white;
+ 
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; 
+}
+
+.hero .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(20%);
+  z-index: -1;
+  
+  
+}
+.division {
+  z-index: 1; /* Ensure the content is above the video */
+  display: flex;
+  color: #fff; /* Text color */
+  padding: 20px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 0, 0, 0);  /*  red color      */
+  height: 100vh;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100vh;
+  border: 1px solid rgba(255, 0, 0, 0.007);/*  red color      */
+  padding-left: 12px;
+}
+.container.left1 {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline; 
+  height: 70vh;
+  border: 1px solid rgba(255, 0, 0, 0);/*  red color      */
+ 
+}
+
+.hero-left h1{
+  font-size: 100px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightblue;
+}
+.hero-left h3,h5{
+ font-family: Georgia, 'Times New Roman', Times;
+}
+
+.container.right1.about {
+  width: 50%;
+  border: 1px solid rgba(255, 0, 0, 0); /*  red color      */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container.right1.about img{
+  height: 450px;
+  width: 450px;
+  margin-top: 30px;
+  padding-top: 20px;
+  filter: drop-shadow(8px 8px 8px black);
+  transition: 1s;
+
+}
+.container.right1.about img:hover{
+  filter: drop-shadow(8px 8px 8px black);
+  transform:rotate(20deg) ;
+ 
+}
+/* Login CSS 
+///////////////////
+////////////////////                             /////////////////////////
+/////////////////////                         /////////////////////////////
+/////////////////// */
+
+.body-login {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Jost", sans-serif;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+
+.main {
+  width: 50%;
+  margin: 90px 0 20px 0;
+  overflow: hidden;
+
+  border-radius: 10px;
+  box-shadow: 5px 20px 50px #000;
+}
+
+.signup {
+  display: contents;
+  height: 100%;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+
+.signup label {
+  color: #fff;
+  font-size: 30px;
+  justify-content: center;
+  display: flex;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.signup input {
+  width: 50%;
+  height: 2px;
+  background: #e0dede;
+  justify-content: center;
+  display: flex;
+  margin: 10px auto;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.signup form {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+}
+
+.signup button {
+  width: 50%;
+  height: 40px;
+  margin: 10px auto;
+  justify-content: center;
+  display: block;
+  color: #fff;
+  background: #573b8a;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 10px;
+  font-family: cursive;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.signup button:hover {
+  color: orange;
+  border: 1px solid orange;
+}
+
+.signup button .link {
+  color: #fff;
+  text-decoration: none;
+  font-family: cursive;
+}
+
+.signup button .link:hover {
+  color: orange;
+}
+
+.login {
+  height: 100%;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+.login input {
+  width: 50%;
+  height: 2px;
+  background: #e0dede;
+  justify-content: center;
+  display: flex;
+  margin: 10px auto;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.login form {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+.login label {
+  color: #fff;
+  font-size: 30px;
+  justify-content: center;
+  display: flex;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.login button {
+  width: 50%;
+  height: 40px;
+  margin: 10px auto;
+  justify-content: center;
+  display: block;
+  color: #fff;
+  background: #573b8a;
+  font-size: 1em;
+  font-family: cursive;
+  font-weight: bold;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login button:hover {
+  color: orange;
+  border: 1px solid orange;
+}
+
+.login button .link {
+  font-family: cursive;
+  color: #fff;
+  text-decoration: none;
+}
+
+.login button .link:hover{
+  color:orange;
+}
+
+
+
+/* Responsive CSS */
+/* 
+ ****************************************
+**************************************
+**********************************
+********************************************
+******************************************
+*/
+@media (max-width: 768px) {
+ 
+  nav .navbar {
+    top: 0;
+  }
+  
+  .division,
+  .division1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container.left,
+  .hero-left {
+    background-color: rgba(0, 255, 255, 0);
+    width: 100%;
+    height: 50vh;
+    border: 1px solid red;
+  }
+  .container.left1{
+    height: 40vh;
+  }
+  .container.left img{
+    width: 200px;
+    height: 100px;
+  }
+
+  .about-text{
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-left {
+    margin-top: 5rem;
+  }
+
+  .container.right,
+  .container.right1.about {
+    background-color: rgba(127, 255, 212, 0);
+    width: 100%;
+    height: 50vh;
+    border: 1px solid red;
+  }
+
+  .container.left img{
+    width: 440px;
+    height: 380px;
+  }
+  nav .container {
+    margin: 0rem 0rem 0rem 0;
+    border-radius: 12px;
+    background-color: rgb(2, 2, 1);
+  }
+  nav .container img {
+    width: 50px;
+    height: 50px;
+  }
+
+  nav .menu-toggle {
+    display: flex;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li a {
+    margin: 0.2rem 0.5rem;
+  }
+
+  nav ul.nav-links.open {
+    display: flex;
+  }
+
+  .main {
+    width: 95%;
+  }
+}
+
+/*  Admin Panel */
+.admin{
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  width: 100%;
+  height: 100vh;
+}
+/* Infol Page */

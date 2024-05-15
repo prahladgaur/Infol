@@ -1,0 +1,118 @@
+.Infol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4px;
+  font-family:  cursive;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  width: 100%;
+  height: 100%;
+}
+
+.infol_data1 h2,p{
+  font-family: 'roboto';
+}
+
+.infol_data div {
+  border: 1px solid red;
+}
+
+.infol_data {
+  margin-top: 4rem;
+  background-color: rgba(94, 186, 156, 0);
+  padding: 20px;
+  width: 100%;
+  display: grid;
+  flex-direction: column;
+  gap: 12px;
+  border: 5px solid rgb(0, 0, 0);
+}
+
+.info-table {
+  width: 100%;
+  padding: 10px;
+  font-family:  'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.infol_data1 {
+  margin-top: 4rem;
+  background-color: rgba(127, 255, 212, 0);
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: aliceblue;
+  border: 5px solid rgb(0, 0, 0);
+}
+
+
+.infol_data input{
+  width: 100%;
+}
+
+
+.infol_data h2{
+color: aliceblue;
+font-family:'roboto';
+}
+
+.infol_data1 div {
+  border: 1px solid red;
+}
+
+/* Find Influencers from search bar  */
+
+.profile-card {
+  display: grid;
+  grid-gap: 20px 12px;
+  grid-template-columns: repeat(auto-fill, minmax(180px , 1fr));
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  width: 180px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.container1 {
+  overflow-x: hidden;
+  width: 180px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+}
+.card img {
+  height: 200px;
+  width: 180px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+}
+
+/* Add some padding inside the card container */
+.container1 {
+  padding: 2px 16px;
+}
+.container1 p{
+  margin: 0;
+}
+
+
+@media (max-width: 768px) {
+ .card, .card img, .container1{
+  width: 100%;
+  
+ }
+
+ 
+}
